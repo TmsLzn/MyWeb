@@ -1,0 +1,89 @@
+@BASE = http://127.0.0.1:8080/api/v1
+###
+
+GET {{BASE}}/usuarios
+
+###
+# @name login
+POST {{BASE}}/login
+Content-Type: application/json
+
+{
+    "email":"messi@gmail.com",
+    "password":"hola"
+}
+
+###
+#PRUEBA DE ACEPTACION PRIMER BLOQUE- 1 
+POST {{BASE}}/register
+Content-Type: application/json
+
+{   
+	"userId":6,
+	"nombre": "Jose",
+	"fechaNacimiento": "2002-09-07",
+	"estatura": 190,
+	"peso": 80,	
+	"email": "josazo@gmail.com",
+	"password": "hola",
+	"fechaAlta": "2021-01-01",
+	"fechaBaja":"2022-01-01",
+	"aficion": "Deporte",
+	"genero": "Masculino",
+	"colorOjos": "Castaños",
+	"colorPelo": "Castaño",
+	"biografia": "manolazo",
+	"ubicacion": "41500",
+	"busquedaId": 6	
+} 
+###
+
+###
+#PRUEBA DE ACEPTACION PRIMER BLOQUE- 2 
+POST {{BASE}}/register
+Content-Type: application/json
+
+{   
+	"nombre": "Messi",
+	"fechaNacimiento": "2002-09-07",
+	"estatura": 160,
+	"peso": 80,	
+	"email": "messigod@gmail.com",
+	"password": "hola",
+	"fechaAlta": "2021-01-01",
+	"aficion": "Deporte",
+	"genero": "Masculino",
+	"colorOjos": "Castaños",
+	"colorPelo": "Castaño",
+	"biografia": "pulgin",
+	"ubicacion": "41500",
+	"busquedaId": 12	
+} 
+###
+#PRUEBA DE ACEPTACION PRIMER BLOQUE- 3
+# @name login
+POST {{BASE}}/login
+Content-Type: application/json
+
+{
+    "email":"messigod@gmail.com",
+    "password":"hola"
+}
+
+###
+PUT {{BASE}}/usuarios/5
+Content-Type: application/json 
+
+
+{ 
+
+    "fechaBaja":"2022-01-01"
+}
+###
+DELETE {{BASE}}/usuarios/6
+Token: {{login.response.body.sessionToken}}
+
+###
+
+
+

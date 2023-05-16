@@ -1,0 +1,86 @@
+{
+    "getAll": {
+        "description": "Gets all entries from 'usuarios'",
+        "route": "/usuarios",
+        "method": "GET",
+        "sql": "SELECT * FROM usuarios",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "getById": {
+        "description": "Gets an entry from 'usuarios' by its primary key",
+        "route": "/usuarios/$userId",
+        "method": "GET",
+        "sql": "SELECT * FROM usuarios WHERE userId = $userId",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "create": {
+        "description": "Creates a new entry in 'usuarios'",
+        "route": "/usuarios",
+        "method": "POST",
+        "sql": "INSERT INTO usuarios (nombre, fechaNacimiento, estatura, peso, email, password, fechaAlta, fechaBaja, aficion, genero, colorOjos, colorPelo, biografia, ubicacion, busquedaId) VALUES ($nombre, $fechaNacimiento, $estatura, $peso, $email, $password, $fechaAlta, $fechaBaja, $aficion, $genero, $colorOjos, $colorPelo, $biografia, $ubicacion, $busquedaId)",
+        "request_body_params": [
+            "nombre",
+            "fechaNacimiento",
+            "estatura",
+            "peso",
+            "email",
+            "password",
+            "fechaAlta",
+            "fechaBaja",
+            "aficion",
+            "genero",
+            "colorOjos",
+            "colorPelo",
+            "biografia",
+            "ubicacion",
+            "busquedaId"
+        ],
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "update": {
+        "description": "Updates an existing entry in 'usuarios' by its primary key",
+        "route": "/usuarios/$userId",
+        "method": "PUT",
+        "sql": "UPDATE usuarios SET nombre = $nombre, fechaNacimiento = $fechaNacimiento, estatura = $estatura, peso = $peso, email = $email, password = $password, fechaAlta = $fechaAlta, fechaBaja = $fechaBaja, aficion = $aficion, genero = $genero, colorOjos = $colorOjos, colorPelo = $colorPelo, biografia = $biografia, ubicacion = $ubicacion, busquedaId = $busquedaId WHERE userId = $userId",
+        "request_body_params": [
+            "nombre",
+            "fechaNacimiento",
+            "estatura",
+            "peso",
+            "email",
+            "password",
+            "fechaAlta",
+            "fechaBaja",
+            "aficion",
+            "genero",
+            "colorOjos",
+            "colorPelo",
+            "biografia",
+            "ubicacion",
+            "busquedaId"
+        ],
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "delete": {
+        "description": "Deletes an existing entry in 'usuarios' by its primary key",
+        "route": "/usuarios/$userId",
+        "method": "DELETE",
+        "sql": "DELETE FROM usuarios WHERE userId = $userId",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    }
+}

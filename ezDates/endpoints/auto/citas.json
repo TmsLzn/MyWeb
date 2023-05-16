@@ -1,0 +1,60 @@
+{
+    "getAll": {
+        "description": "Gets all entries from 'citas'",
+        "route": "/citas",
+        "method": "GET",
+        "sql": "SELECT * FROM citas",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "getById": {
+        "description": "Gets an entry from 'citas' by its primary key",
+        "route": "/citas/$citasId",
+        "method": "GET",
+        "sql": "SELECT * FROM citas WHERE citasId = $citasId",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "create": {
+        "description": "Creates a new entry in 'citas'",
+        "route": "/citas",
+        "method": "POST",
+        "sql": "INSERT INTO citas (vinculoId, relacion) VALUES ($vinculoId, $relacion)",
+        "request_body_params": [
+            "vinculoId",
+            "relacion"
+        ],
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "update": {
+        "description": "Updates an existing entry in 'citas' by its primary key",
+        "route": "/citas/$citasId",
+        "method": "PUT",
+        "sql": "UPDATE citas SET vinculoId = $vinculoId, relacion = $relacion WHERE citasId = $citasId",
+        "request_body_params": [
+            "vinculoId",
+            "relacion"
+        ],
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "delete": {
+        "description": "Deletes an existing entry in 'citas' by its primary key",
+        "route": "/citas/$citasId",
+        "method": "DELETE",
+        "sql": "DELETE FROM citas WHERE citasId = $citasId",
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ]
+    }
+}

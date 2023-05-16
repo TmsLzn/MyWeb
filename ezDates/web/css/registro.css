@@ -1,0 +1,106 @@
+body {
+    background-color: #333333;
+}
+
+
+.registro1 {
+
+    padding: 3%;
+}
+
+.register-left {
+
+    margin-top: -5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: center;
+
+}
+
+.imagen {
+
+    max-width: 70%;
+    max-height: auto;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .register-right {
+        height: 400px;
+
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        background: #f8f9fa;
+        padding: 3%;
+        border-top-left-radius: 5% 5%;
+        border-bottom-left-radius: 5% 5%;
+        border-top-right-radius: 5% 5%;
+        border-bottom-right-radius: 5% 5%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .register-right {
+        height: 300px;
+        overflow-y: auto;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        background: #f8f9fa;
+        margin-top: 2%;
+        padding-top: 3%;
+        padding-bottom: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
+        border-top-left-radius: 5% 15%;
+        border-bottom-left-radius: 5% 15%;
+        border-top-right-radius: 5% 15%;
+        border-bottom-right-radius: 5% 15%;
+    }
+}
+
+.btn-register {
+    border: none;
+    border-radius: 1.5rem;
+    width: 20%;
+    max-height: auto;
+    background: #24415c;
+}
+
+.btn-register:hover {
+    background-color: #0b2741;
+    transition: 0.5s;
+}
+
+span.input-group-text {
+    color: #009edf;
+    font-size: 17px;
+}
+
+select[name=eyeColor],
+select[name=hairColor],
+select[name=gender] {
+    padding: 1%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

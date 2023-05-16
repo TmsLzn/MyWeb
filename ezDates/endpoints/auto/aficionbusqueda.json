@@ -1,0 +1,62 @@
+{
+    "getAll": {
+        "description": "Gets all entries from 'aficionbusqueda'",
+        "route": "/aficionbusqueda",
+        "method": "GET",
+        "sql": "SELECT * FROM aficionbusqueda",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "getById": {
+        "description": "Gets an entry from 'aficionbusqueda' by its primary key",
+        "route": "/aficionbusqueda/$aficionBusquedaId",
+        "method": "GET",
+        "sql": "SELECT * FROM aficionbusqueda WHERE aficionBusquedaId = $aficionBusquedaId",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "create": {
+        "description": "Creates a new entry in 'aficionbusqueda'",
+        "route": "/aficionbusqueda",
+        "method": "POST",
+        "sql": "INSERT INTO aficionbusqueda (aficionBusquedaId, aficion, busquedaId) VALUES ($aficionBusquedaId, $aficion, $busquedaId)",
+        "request_body_params": [
+            "aficionBusquedaId",
+            "aficion",
+            "busquedaId"
+        ],
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "update": {
+        "description": "Updates an existing entry in 'aficionbusqueda' by its primary key",
+        "route": "/aficionbusqueda/$aficionBusquedaId",
+        "method": "PUT",
+        "sql": "UPDATE aficionbusqueda SET aficionBusquedaId = $aficionBusquedaId, aficion = $aficion, busquedaId = $busquedaId WHERE aficionBusquedaId = $aficionBusquedaId",
+        "request_body_params": [
+            "aficionBusquedaId",
+            "aficion",
+            "busquedaId"
+        ],
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "delete": {
+        "description": "Deletes an existing entry in 'aficionbusqueda' by its primary key",
+        "route": "/aficionbusqueda/$aficionBusquedaId",
+        "method": "DELETE",
+        "sql": "DELETE FROM aficionbusqueda WHERE aficionBusquedaId = $aficionBusquedaId",
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ]
+    }
+}

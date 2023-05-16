@@ -1,0 +1,78 @@
+@BASE = http://127.0.0.1:8080/api/v1
+###
+
+GET {{BASE}}/vinculos
+###
+#PRUEBA DE ACEPTACION SEGUNDO BLOQUE - Solicitar y aceptar un vínculo de amistad con otro usuario
+POST  {{BASE}}/vinculos
+Content-Type: application/json
+
+{   
+    "userIdEnviado": 2,
+    "userIdRecibido": 7,
+    "estadoSolicitud": "Pendiente"
+}   
+###
+PUT {{BASE}}/vinculos/10
+Content-Type: application/json
+
+{   
+    "userIdEnviado": 2,
+    "userIdRecibido": 7,
+    "estadoSolicitud": "Aceptada"
+}
+###
+
+
+#PRUEBA DE ACEPTACION SEGUNDO BLOQUE - Solicitar y rechazar el vínculo de amistad.
+POST  {{BASE}}/vinculos
+Content-Type: application/json
+
+{
+    "userIdEnviado": 4,
+    "userIdRecibido": 7,
+    "estadoSolicitud": "Pendiente"
+}   
+###
+PUT {{BASE}}/vinculos/6
+Content-Type: application/json
+
+{   
+    "userIdEnviado": 4,
+    "userIdRecibido": 7,
+    "estadoSolicitud": "Rechazada"
+}
+###
+#PRUEBA DE ACEPTACION SEGUNDO BLOQUE - Revocar la amistad.
+PUT {{BASE}}/vinculos/10
+Content-Type: application/json
+
+{   
+    "userIdEnviado": 2,
+    "userIdRecibido": 7,
+    "estadoSolicitud": "Aceptada",
+    "revocacion":1
+}
+###
+#PRUEBA DE ACEPTACION SEGUNDO BLOQUE -  Enviar una solicitud de amistad a sí mismo
+POST  {{BASE}}/vinculos
+Content-Type: application/json
+
+{   
+    "userIdEnviado": 9,
+    "userIdRecibido": 9,
+    "estadoSolicitud": "Pendiente"
+}   
+###
+#PRUEBA DE ACEPTACION SEGUNDO BLOQUE - Enviar una solicitud de amistad a sí mismo
+POST  {{BASE}}/vinculos
+Content-Type: application/json
+
+{   
+    "userIdEnviado": 4,
+    "userIdRecibido": 7,
+    "estadoSolicitud": "Pendiente"
+}   
+
+###
+DELETE {{BASE}}/vinculos/1

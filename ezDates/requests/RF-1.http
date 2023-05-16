@@ -1,0 +1,212 @@
+@BASE = http://127.0.0.1:8080/api/v1
+###
+
+GET {{BASE}}/usuarios
+
+###
+# @name login
+POST {{BASE}}/login
+Content-Type: application/json
+
+{
+    "email":"messigod@gmail.com",
+    "password":"hola"
+}
+
+###
+#PRUEBA DE ACEPTACION PRIMER BLOQUE- Registrar un usuario nuevo con todos los datos obligatorios y correctos según todas las
+#reglas de negocio aplicables a una instancia de usuario
+POST {{BASE}}/register
+Content-Type: application/json
+
+{   
+	"userId":6,
+	"nombre": "Jose",
+	"fechaNacimiento": "2002-09-07",
+	"estatura": 190,
+	"peso": 80,	
+	"email": "josazo@gmail.com",
+	"password": "hola",
+	"fechaAlta": "2021-01-01",
+	"fechaBaja":"2022-01-01",
+	"aficion": "Deporte",
+	"genero": "Masculino",
+	"colorOjos": "Castaños",
+	"colorPelo": "Castaño",
+	"biografia": "manolazo",
+	"ubicacion": "41500",
+	"busquedaId": 6	
+} 
+###
+
+###
+#PRUEBA DE ACEPTACION PRIMER BLOQUE- Registrar un usuario sin datos obligatorios
+POST {{BASE}}/register
+Content-Type: application/json
+
+{   
+	"nombre": "Messi",
+	"fechaNacimiento": "2002-09-07",
+	"estatura": 160,
+	"peso": 80,	
+	"email": "messigod@gmail.com",
+	"password": "hola",
+	"fechaAlta": "2021-01-01",
+	"aficion": "Deporte",
+	"genero": "Masculino",
+	"colorOjos": "Castaños",
+	"colorPelo": "Castaño",
+	"biografia": "pulgin",
+	"ubicacion": "41500",
+	"busquedaId": 12	
+} 
+###
+#PRUEBA DE ACEPTACION PRIMER BLOQUE- Hacer login de un usuario activo existente, suministrando password correcta
+# @name login
+POST {{BASE}}/login
+Content-Type: application/json
+
+{
+    "email":"messigod@gmail.com",
+    "password":"hola"
+}
+
+###
+##PRUEBA DE ACEPTACION PRIMER BLOQUE- Dar de baja (lógica) un usuario activo (Pasa a estar inactivo)
+PUT {{BASE}}/usuarios/5
+Content-Type: application/json 
+
+
+{ 
+	"nombre": "Maria",
+	"fechaNacimiento": "2002-09-07",
+	"estatura": 160,
+	"peso": 80,	
+	"email": "marito@gmail.com",
+	"password": "hola",
+	"fechaAlta": "2021-01-01",
+	"aficion": "Deporte",
+	"genero": "Masculino",
+	"colorOjos": "Castaños",
+	"colorPelo": "Castaño",
+	"biografia": "pulgi",
+	"ubicacion": "41500",
+	"busquedaId": 5
+}
+###
+#PRUEBA DE ACEPTACION PRIMER BLOQUE- Registrar un usuario menor de edad.
+POST {{BASE}}/register
+Content-Type: application/json
+
+{   
+	"nombre": "Cristiano",
+	"fechaNacimiento": "2005-09-07",
+	"estatura": 160,
+	"peso": 80,	
+	"email": "cris@gmail.com",
+	"password": "hola",
+	"fechaAlta": "2021-01-01",
+	"aficion": "Deporte",
+	"genero": "Masculino",
+	"colorOjos": "Castaños",
+	"colorPelo": "Castaño",
+	"biografia": "pulgin",
+	"ubicacion": "41500",
+	"busquedaId": 12	
+} 
+###
+#PRUEBA DE ACEPTACION PRIMER BLOQUE- Registrar un email duplicado
+POST {{BASE}}/register
+Content-Type: application/json
+
+{   
+	"nombre": "Maroa",
+	"fechaNacimiento": "2002-09-07",
+	"estatura": 160,
+	"peso": 80,	
+	"email": "messigod@gmail.com",
+	"password": "hola",
+	"fechaAlta": "2021-01-01",
+	"aficion": "Deporte",
+	"genero": "Masculino",
+	"colorOjos": "Castaños",
+	"colorPelo": "Castaño",
+	"biografia": "pulgin",
+	"ubicacion": "41500",
+	"busquedaId": 12	
+} 
+###
+#PRUEBA DE ACEPTACION PRIMER BLOQUE - Introducir rangos de fechas inconsistentes
+POST {{BASE}}/register
+Content-Type: application/json
+
+{   
+	"nombre": "Mario",
+	"fechaNacimiento": "2002-09-07",
+	"estatura": 160,
+	"peso": 80,	
+	"email": "mariioo@gmail.com",
+	"password": "hola",
+	"fechaAlta": "2021-01-01",
+	"fechaBaja":"2020-01-01",
+	"aficion": "Deporte",
+	"genero": "Masculino",
+	"colorOjos": "Castaños",
+	"colorPelo": "Castaño",
+	"biografia": "pulgin",
+	"ubicacion": "41500",
+	"busquedaId": 12	
+} 
+###
+#PRUEBA DE ACEPTACION PRIMER BLOQUE - Hacer login de un usuario inexistente
+POST {{BASE}}/login
+Content-Type: application/json
+
+{
+    "email":"xdd@gmail.com",
+    "password":"xddd"
+}
+###
+#PRUEBA DE ACEPTACION PRIMER BLOQUE - Hacer login de un usuario inactivo
+
+POST {{BASE}}/login
+Content-Type: application/json
+
+{
+    "email":"mariioo@gmail.com",
+    "password":"hola"
+}
+
+###
+#PRUEBA DE ACEPTACION PRIMER BLOQUE - Hacer login de un usuario activo con password incorrecta
+POST {{BASE}}/login
+Content-Type: application/json
+
+{
+    "email":"messigod@gmail.com",
+    "password":"adios"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+
+
+DELETE {{BASE}}/usuarios/8
+Token: {{login.response.body.sessionToken}}
+
+###
+
+
+
