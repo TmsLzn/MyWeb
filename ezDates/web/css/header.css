@@ -1,0 +1,45 @@
+.title-block {
+    border: 1px solid black;
+    background-color: #333;
+}
+
+.titulo {
+
+    font-family: Arial, sans-serif;
+    font-size: 54px;
+    font-weight: bold;
+    color: #981c1c;
+    text-align: center
+}
+
+.subTitulo {
+
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #981c1c;
+    text-align: center
+}
+
+.navbar {
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.navbar-collapse.left .navbar-nav {
+    border: 1px solid red;
+}
+
+
+.navbar-collapse.right {
+    border: 1px solid red;
+    text-align: right;
+    right: 0;
+}
+
+.navbar-nav .nav-item{
+    text-align: right;
+    right: 100;
+}
