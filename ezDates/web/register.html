@@ -1,4 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/registro.css">
+    <script src="/js/utils/include.js"></script>
+    <script src="js/registro.js" type="module"></script>
+
+    <title>Ez-Dates: Registro</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/web/css/footer.css"></script>
+    <script src="/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script type="module" src="/js/register.js"></script>
+    <script src="js/libs/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid-register">
+        <div id="page-header"></div>
+        <div class="row my-4 py-4" id="feed">
+            <div id="errors"></div>
+        </div>
+
+        <body class="dark"></body>
+
+
+        <p>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md">
+                    <h3>Register a new user</h3>
+                </div>
+                <hr>
+            </div>
+
+
+            <form id="register-form">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="firstname-input">First name:</label>
+                            <input type="text" class="form-control text-light bg-dark" id="firstname-input"
+                                name="firstName" placeholder="First name">
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="lastname-input">Last name:</label>
+                            <input type="text" class="form-control text-light bg-dark" id="lastname-input"
+                                name="lastName" placeholder="Last name">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="email-input">Email:</label>
+                            <input type="email" class="form-control text-light bg-dark" id="email-input" name="email"
+                                placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="phone-input">Phone:</label>
+                            <input type="tel" class="form-control text-light bg-dark" id="phone-input" name="phone"
+                                placeholder="Phone">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="username-input">Username:</label>
+                            <input type="text" class="form-control text-light bg-dark" id="username-input"
+                                name="username" placeholder="Username">
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="password-input">Password:</label>
+                            <input type="password" class="form-control text-light bg-dark" id="password-input"
+                                name="password" placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="password-input">Repeat Password:</label>
+                            <input type="password" class="form-control text-light bg-dark" id="password-input"
+                                name="password" placeholder="Repeat Password">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md text-center">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        </p>
+
+        <a href="index.html">Return to the main page</a>
+
+    </div>
+    <script>
+        include("header.html", "#page-header");
+    </script>
+
+
+</body>
+
+<footer>
+    <div class="container-footer">
+        <div id="page-footer"></div>
+        <script>
+            include("footer.html", "#page-footer");
+        </script>
+    </div>
+
+</footer>
+
 </html>
