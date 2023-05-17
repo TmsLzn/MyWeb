@@ -17,10 +17,10 @@ gallery.addEventListener("click", function (event) {
 });
 
 async function loadPhotos() {
-    let galleryContainer = document.getElementById("fotos_trending");
+    let galleryContainer = document.getElementById("gallery");
     try {
         let photos = await fotosAPI_auto.getAll();
-        let cardGallery = photoGallery.asPhotoGallery(photos);
+        let cardGallery = photoGallery.asCardGallery(photos);
         galleryContainer.appendChild(cardGallery);
     } catch (err) {
         messageRenderer.showErrorAsAlert("Error cargando foto", err);

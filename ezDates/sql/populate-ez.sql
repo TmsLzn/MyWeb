@@ -54,7 +54,7 @@ INSERT INTO Ubicaciones(ubicacionId, codigoPostalId, municipioId, provinciaId) V
 	(4, 4, 4, 4);
 
 INSERT INTO  Fotos(fotoId ,userId ,urlFoto,nombreFoto,descripcionFoto) VALUES
-   (1,1,'www.123.com/f1', 'Foton','Foto de mi tio'),
+   (1,1,'https://imgur.com/gallery/e0Qlzjz', 'Momo','Momaso amarillo'),
    (2,1,'www.123.com/f2', 'Fotazo','Pedazo Nacidades'),
    (3,2,'www.123.com/f3', 'Fotito','Con los primos'),
    (4,2,'www.123.com/f4', 'Fotooo','En el barrio'),
