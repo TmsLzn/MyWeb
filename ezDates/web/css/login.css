@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container-fluid-login{
+    border: 1px solid rgb(255, 1, 1);
+    background-color: aquamarine;
+    flex-grow: 1;
+}
+
+.container-login{
+    border: 1px solid blue;
+}
+
+.container-footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
