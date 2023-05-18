@@ -29,5 +29,4 @@ async function loadPhotos() {
 }
 
 
-
 document.addEventListener("DOMContentLoaded", main);
