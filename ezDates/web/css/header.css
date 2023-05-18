@@ -1,6 +1,5 @@
 .title-block {
-    border: 1px solid black;
-    background-color: #333;
+    background-color: #0a141d;
     width: 100%;
 }
 
@@ -9,8 +8,9 @@
     font-family: Arial, sans-serif;
     font-size: 54px;
     font-weight: bold;
-    color: #981c1c;
-    text-align: center
+    color: #68829d;
+    text-align: right;
+    
 }
 
 .subTitulo {
@@ -18,13 +18,19 @@
     font-family: Arial, sans-serif;
     font-size: 36px;
     font-weight: bold;
-    color: #981c1c;
-    text-align: center
+    color: #68829d;
+    text-align: left;
 }
 
 .navbar {
+    margin-top: 20px;
     bottom: 0;
+    background-color: #218bf5;
     border-radius: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link{
+    color: #fff;
 }
 

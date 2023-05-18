@@ -3,10 +3,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
+.container-header{
+    background-color: #c8e2fc;
+}
 
 .container-content{
-    background-color: aquamarine;
+    background-color: #c8e2fc;
     flex-grow: 1;
 }
 
