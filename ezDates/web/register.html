@@ -37,7 +37,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md">
-                    <h3>Register a new user</h3>
+                    <h2>Register a new user</h2>
                 </div>
                 <hr>
             </div>
@@ -127,13 +127,149 @@
                         </div>
                     </div>
 
+                </div>
 
+                <div class="row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="foto-input">Foto de perfil:</label>
+                            <input type="text" class="form-control text-light bg-dark" id="foto-input"
+                                name="foto" placeholder="Indique la url de la foto">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="ciudad-input">Ciudad:</label>
+                            <input type="text" class="form-control text-light bg-dark" id="ciudad-input"
+                                name="ciudad" list="ciudades-list" placeholder="Indique la ciudad de España">
+                                <datalist id="ciudades-list">
+                                    <option value="A Coruña"></option>
+                                    <option value="Álava"></option>
+                                    <option value="Albacete"></option>
+                                    <option value="Alicante"></option>
+                                    <option value="Almería"></option>
+                                    <option value="Asturias"></option>
+                                    <option value="Ávila"></option>
+                                    <option value="Badajoz"></option>
+                                    <option value="Barcelona"></option>
+                                    <option value="Burgos"></option>
+                                    <option value="Cáceres"></option>
+                                    <option value="Cádiz"></option>
+                                    <option value="Cantabria"></option>
+                                    <option value="Castellón"></option>
+                                    <option value="Ciudad Real"></option>
+                                    <option value="Córdoba"></option>
+                                    <option value="Cuenca"></option>
+                                    <option value="Girona"></option>
+                                    <option value="Granada"></option>
+                                    <option value="Guadalajara"></option>
+                                    <option value="Guipúzcoa"></option>
+                                    <option value="Huelva"></option>
+                                    <option value="Huesca"></option>
+                                    <option value="Islas Baleares"></option>
+                                    <option value="Jaén"></option>
+                                    <option value="La Rioja"></option>
+                                    <option value="Las Palmas"></option>
+                                    <option value="León"></option>
+                                    <option value="Lleida"></option>
+                                    <option value="Lugo"></option>
+                                    <option value="Madrid"></option>
+                                    <option value="Málaga"></option>
+                                    <option value="Murcia"></option>
+                                    <option value="Navarra"></option>
+                                    <option value="Ourense"></option>
+                                    <option value="Palencia"></option>
+                                    <option value="Pontevedra"></option>
+                                    <option value="Salamanca"></option>
+                                    <option value="Santa Cruz de Tenerife"></option>
+                                    <option value="Segovia"></option>
+                                    <option value="Sevilla"></option>
+                                    <option value="Soria"></option>
+                                    <option value="Tarragona"></option>
+                                    <option value="Teruel"></option>
+                                    <option value="Toledo"></option>
+                                    <option value="Valencia"></option>
+                                    <option value="Valladolid"></option>
+                                    <option value="Vizcaya"></option>
+                                    <option value="Zamora"></option>
+                                    <option value="Zaragoza"></option>
+                                </datalist>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="info">
 
+                    <div class="row">
+                        <h3>Cuéntanos más de ti</h3>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="peso-input">Peso:</label>
+                            <input type="text" class="form-control text-light bg-dark" id="peso-input"
+                                name="peso" placeholder="Indique su peso en kgs">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="estatura-input">Estatura:</label>
+                            <input type="text" class="form-control text-light bg-dark" id="estatura-input"
+                                name="estatura" placeholder="Indique su estatura en cms">
+                        </div>
+                    </div>
+
+                    
 
                 </div>
 
-
+                <div class="row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="color-pelo-input">Color de pelo:</label>
+                            <select class="form-control text-light bg-dark" id="color-pelo-input" name="color-pelo">
+                                <option value="">Seleccionar color de pelo</option>
+                                <option value="Rubio">Rubio</option>
+                                <option value="Castaño">Castaño</option>
+                                <option value="Negro">Negro</option>
+                                <option value="Pelirrojo">Pelirrojo</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="color-ojos-input">Color de ojos:</label>
+                            <select class="form-control text-light bg-dark" id="color-ojos-input" name="color-ojos">
+                                <option value="">Seleccionar color de ojos</option>
+                                <option value="Azul">Azul</option>
+                                <option value="Verde">Verde</option>
+                                <option value="Marrón">Marrón</option>
+                                <option value="Negro">Negro</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="aficcion-input">Aficción:</label>
+                            <input type="text" class="form-control text-light bg-dark" id="aficcion-input"
+                                name="aficcion" list="aficciones-list" placeholder="Indique su aficción">
+                                <datalist id="aficciones-list">
+                                    <option value="A Coruña"></option>
+                                    <option value="Álava"></option>
+                                    <option value="Albacete"></option>
+                                    <option value="Alicante"></option>
+                                    <option value="Almería"></option>
+                                    <option value="Asturias"></option>
+                                </datalist>
+                        </div>
+                    </div>
+                </div>
+                
 
                 <div class="boton-registro">
                     <div class="row">
@@ -144,6 +280,9 @@
                     </div>
 
                 </div>
+
+
+
 
             </form>
         </div>

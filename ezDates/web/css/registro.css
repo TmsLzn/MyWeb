@@ -25,3 +25,8 @@ footer{
     border: 1px solid black;
     margin-top: 15px;
 }
+
+.info{
+    text-align: center;
+    margin-top: 20px;
+}
