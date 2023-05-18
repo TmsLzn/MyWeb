@@ -23,8 +23,8 @@ const photoRenderer = {
 	},
 	// 5.3 Detalles de la foto
 	asDetails: function (photo) {
-		let html = `<div><img src="${photo.uelFoto}" class="img-fluid rounded">
-					<h3>${photo.nombewFoto}</h3>
+		let html = `<div><img src="${photo.urlFoto}" class="img-fluid rounded">
+					<h3>${photo.nombreFoto}</h3>
 					<h6>${photo.description}</h6>
 					<p> Uploaded by (User <a href="profile.html" class="user-link">@${photo.userId})</p>
 					</div>`;

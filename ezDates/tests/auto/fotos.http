@@ -38,7 +38,7 @@ Content-Type: application/json
 
 ### Test 02: Try get one existing fotos by its nonexistent id.
 ### negative test 
-GET {{BASE}}/fotos/999999999
+GET {{BASE}}/fotos/1
 Content-Type: application/json 
 
 
