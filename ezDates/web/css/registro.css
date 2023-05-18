@@ -20,3 +20,8 @@ footer{
     margin-top: 0;
     padding-top: 0;
 }
+
+.boton-registro{
+    border: 1px solid black;
+    margin-top: 15px;
+}
