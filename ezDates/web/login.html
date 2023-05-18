@@ -9,9 +9,9 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/login.css">
     <script src="/js/utils/include.js"></script>
-    
+    <script src="js/login.js" type="module"></script>
 
-    <title>Ez-Dates: Registro</title>
+    <title>Ez-Dates: Iniciar sesión</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -19,7 +19,7 @@
     <script src="/web/css/footer.css"></script>
     <script src="/js/libs/jquery-3.4.1.min.js"></script>
     <script src="/js/libs/bootstrap.min.js"></script>
-    <script type="module" src="/js/register.js"></script>
+    <script type="module" src="/js/login.js"></script>
     <script src="js/libs/axios.min.js"></script>
 </head>
 
@@ -32,55 +32,56 @@
 
         <body class="dark"></body>
 
-        
-        <p>
-        <div class="container-login">
-            <form id="login-form">
-                <div class="login" >
-                    <div class="row text-center">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md">
+                    <h2>Inicia sesión a tu cuenta</h2>
+                </div>
+                <hr>
+            </div>
+
+            <div class="card-body">
+                <form id="login-form">
+                    <div class="row">
                         <div class="col-md">
-                            <h3>Accede a tu cuenta</h3>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                            <div class="form-group">
+                                <label for="email-input">Email:</label>
+                                <input type="text" class="form-control text-light bg-dark" id="email-input" name="email"
+                                    placeholder="Email">
                             </div>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail"
-                                required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                        </div>
-
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"></i><i class="fa fa-key fa"
-                                        aria-hidden="true"></i></span>
-                            </div>
-                            <input type="password" class="form-control" name="password" id="password"
-                                placeholder="Contraseña" required="">
                         </div>
                     </div>
 
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="form-group">
+                                <label for="password-input">Password:</label>
+                                <input type="password" class="form-control text-light bg-dark" id="password-input"
+                                    name="password" placeholder="Password">
+                            </div>
+                        </div>
+                    </div>
 
-                </div>
-                <div class="form-group justify-content-center" style="text-align: center; padding:1%;">
-                    <button type="submit" class="btn btn-primary btn-register">Iniciar sesion</button>
-                </div>
-            </form>
+                    <div class="row">
+                        <div class="col-md text-center">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <a href="index.html">Return to the main page</a>
+
+            <script>
+                include("header.html", "#page-header");
+            </script>
+
         </div>
-        </p>
 
-        <a href="index.html">Return to the main page</a>
-
+        
     </div>
-    <script>
-        include("header.html", "#page-header");
-    </script>
-
 
 </body>
-
 <footer>
     <div class="container-footer">
         <div id="page-footer"></div>
@@ -88,7 +89,6 @@
             include("footer.html", "#page-footer");
         </script>
     </div>
-
 </footer>
 
 </html>

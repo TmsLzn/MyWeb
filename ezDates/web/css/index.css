@@ -3,19 +3,45 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-.container-header{
+
+.container-header {
     background-color: #c8e2fc;
 }
 
-.container-content{
-    background-color: #c8e2fc;
-    flex-grow: 1;
-}
 
 
-.container-footer{
+
+.container-footer {
     position: fixed;
     width: 100%;
     bottom: 0;
 }
 
+.container-content {
+    background-color: #c8e2fc;
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.happy-couples {
+    margin-top: 40px;
+}
+
+.happy-couples img {
+    width: 33.33%;
+    padding: 5px;
+    box-sizing: border-box;
+}
