@@ -1,27 +1,27 @@
 "use strict";
-import { photoGallery } from '/web/js/renderers/fotos_trendingGallery.js';
+import { photoGallery } from '/web/js/renderers/usuarioGallery.js';
 
-import { fotosAPI_auto } from '/web/js/api/_fotos.js';
+import { usuariosAPI_auto } from '/web/js/api/_usuarios.js';
 import { messageRenderer } from '/web/js/renderers/messages.js';
 
 async function main() {
-    loadPhotos();
+    loadUsers();
 };
 
-fotos_trending.addEventListener("click", function (event) {
+usuarios_trending.addEventListener("click", function (event) {
     let card = event.target.closest(".card");
     if (card) {
-        let photoId = card.getAttribute("data-photo-id");
+        let userId = card.getAttribute("data-photo-id");
        //Redireccionar a photo_details.html pasando el ID de la foto
-        window.location.href = "photo_details.html?id=" + photoId;
+        window.location.href = "photo_details.html?id=" + userId;
     }
 });
 
-async function loadPhotos() {
-    let galleryContainer = document.getElementById("fotos_trending");
+async function loadUsers() {
+    let galleryContainer = document.getElementById("usuarios_trending");
     try {
-        let photos = await fotosAPI_auto.getAll();
-        let cardGallery = photoGallery.asPhotoGallery(photos);
+        let usuarios = await usuariosAPI_auto.getAll();
+        let cardGallery = photoGallery.asPhotoGallery(usuarios);
         galleryContainer.appendChild(cardGallery);
     } catch (err) {
         messageRenderer.showErrorAsAlert("Error cargando foto", err);

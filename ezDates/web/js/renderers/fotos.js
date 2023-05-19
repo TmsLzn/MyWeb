@@ -11,9 +11,9 @@ const photoRenderer = {
 							</a>
 						</div>	
 						<div class="card-body pb-0">
-							<h5 class="card-title text-center p-0 m-0 ">${photo.nombreFoto} </h5 >
-							<p class= "card-text p-0 m-0 "><small>${photo.descripcionFoto}</small></p>
-							<p class= "text-end">@${photo.userId}
+							<h5 class="card-title text-center p-0 m-0 ">@${photo.usuario} </h5 >
+							<p class= "card-text p-0 m-0 "><text-end>${photo.descripcionFoto}</small></p>
+							<p class= "text-end">
 							</p>
 						</div>
 					</div>
