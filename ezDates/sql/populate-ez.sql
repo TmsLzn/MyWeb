@@ -8,7 +8,7 @@ TRUNCATE TABLE Citas;
 SET FOREIGN_KEY_CHECKS=1;
 
 INSERT INTO Usuarios(userId, nombre, usuario, fechaNacimiento, estatura, peso, telefono, email, password, aficion, genero, colorOjos, colorPelo, biografia, provincia, fotoUrl) VALUES
-   (1, 'Borja', 'borjitaaa', '2000-01-01', 170, 20, 600123456, 'borjaalba@gmail.com', '1234', 'Deportes', 'Masculino', 'Verdes', 'Castaño', 'biografia', 'Sevilla', '/web/images/samoyed.jpg'),
+   (1, 'Borja', 'borjitaaa', '2000-01-01', 170, 20, 600123456, 'borjaalba@gmail.com', '1234', 'Deportes', 'Masculino', 'Verdes', 'Castaño', 'biografia', 'Sevilla', '/web/images/hombre_cantando.avif'),
    (2, 'Javier', 'javichulo', '2002-09-30', 171, 67, 1234567890, 'javipas@gmail.com', '1234', 'Videojuegos', 'Masculino', 'Azules', 'Castaño', 'Sobreviviendo en la US', 'Sevilla', '/web/images/samoyed.jpg'),
    (3, 'Antonio', 'ayyyantonio', '2000-01-01', 155, 540, 112233445, 'pedro@gmail.com', '1234', 'Naturaleza', 'Masculino', 'Verdes', 'Castaño', 'biografia', 'Sevilla', '/web/images/samoyed.jpg'),
    (4, 'Marina', 'LAMARI', '2003-04-02', 165, 80, 1234567890, 'marinauwu@gmail.com', '1234', 'Fotografía', 'Femenino', 'Castaños', 'Rubio', 'Necesito tiempo para salir', 'Sevilla', 'https://i.imgur.com/qN5vYRk.jpeg'),
@@ -21,8 +21,8 @@ INSERT INTO Vinculos(vinculoId, usernameEnviado, usernameRecibido, estadoSolicit
     (4, 'borjitaaa', 'ayyyantonio', 'Rechazada', '2010-07-08', True);
 
 INSERT INTO Fotos(fotoId, usuario, urlFoto, nombreFoto, descripcionFoto) VALUES
-   (1, 'borjitaaa', '/web/images/samoyed.jpg', 'Momo', 'Momaso amarillo'),
-   (2, 'borjitaaa', 'https://i.imgur.com/qN5vYRk.jpeg', 'Fotazo', 'Pedazo Nacidades'),
+   (1, 'borjitaaa', '/web/images/samoyed.jpg', 'Perro', 'Que bonito es mi perro'),
+   (2, 'borjitaaa', '/web/images/hombre_cantando.avif', 'Fotazo', 'Nací con un microfono en el culo'),
    (3, 'javichulo', 'www.123.com/f3', 'Fotito', 'Con los primos'),
    (4, 'javichulo', 'www.123.com/f4', 'Fotooo', 'En el barrio'),
    (5, 'ayyyantonio', 'www.123.com/f5', 'PedazoFoto', 'Viva Cristo Rey'),

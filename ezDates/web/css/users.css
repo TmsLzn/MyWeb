@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container-header{
+    background-color: #c8e2fc;
+}
+
+.container-body{
+    background-color: #c8e2fc;
+    
+}
+.container-content{
+    margin: 0 50px;
+    margin-bottom: 50px;
+}
+
+
+.container-footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.card{
+    width: 400px;
+}
+
+.rounded-profile {
+    border-radius: 80px;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    justify-content: right;
+}
+
+.profile-image-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
