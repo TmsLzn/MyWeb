@@ -20,7 +20,7 @@ Content-Type: application/json
 
 { 
 	"email": ###REPLACE###,
-	"password": ###REPLACE###
+	"contrasena": ###REPLACE###
 }
 
 ###
@@ -52,20 +52,20 @@ Token: {{token}}
 
 {
 	"nombre": ###REPLACE###,
+	"usuario": ###REPLACE###,
 	"fechaNacimiento": ###REPLACE###,
 	"estatura": ###REPLACE###,
 	"peso": ###REPLACE###,
+	"telefono": ###REPLACE###,
 	"email": ###REPLACE###,
-	"password": ###REPLACE###,
-	"fechaAlta": ###REPLACE###,
-	"fechaBaja": ###REPLACE###,
+	"contrasena": ###REPLACE###,
 	"aficion": ###REPLACE###,
 	"genero": ###REPLACE###,
 	"colorOjos": ###REPLACE###,
 	"colorPelo": ###REPLACE###,
 	"biografia": ###REPLACE###,
-	"ubicacion": ###REPLACE###,
-	"busquedaId": ###REPLACE###
+	"provincia": ###REPLACE###,
+	"fotoUrl": ###REPLACE###
 } 
 
 ### Check the created usuarios
@@ -81,20 +81,20 @@ Content-Type: application/json
 
 { 
 	"nombre": ###REPLACE###,
+	"usuario": ###REPLACE###,
 	"fechaNacimiento": ###REPLACE###,
 	"estatura": ###REPLACE###,
 	"peso": ###REPLACE###,
+	"telefono": ###REPLACE###,
 	"email": ###REPLACE###,
-	"password": ###REPLACE###,
-	"fechaAlta": ###REPLACE###,
-	"fechaBaja": ###REPLACE###,
+	"contrasena": ###REPLACE###,
 	"aficion": ###REPLACE###,
 	"genero": ###REPLACE###,
 	"colorOjos": ###REPLACE###,
 	"colorPelo": ###REPLACE###,
 	"biografia": ###REPLACE###,
-	"ubicacion": ###REPLACE###,
-	"busquedaId": ###REPLACE###
+	"provincia": ###REPLACE###,
+	"fotoUrl": ###REPLACE###
 }
 
 ### Test 05: Modify an existing usuarios 
@@ -106,20 +106,20 @@ Token: {{token}}
 
 { 
 	"nombre": ###REPLACE###,
+	"usuario": ###REPLACE###,
 	"fechaNacimiento": ###REPLACE###,
 	"estatura": ###REPLACE###,
 	"peso": ###REPLACE###,
+	"telefono": ###REPLACE###,
 	"email": ###REPLACE###,
-	"password": ###REPLACE###,
-	"fechaAlta": ###REPLACE###,
-	"fechaBaja": ###REPLACE###,
+	"contrasena": ###REPLACE###,
 	"aficion": ###REPLACE###,
 	"genero": ###REPLACE###,
 	"colorOjos": ###REPLACE###,
 	"colorPelo": ###REPLACE###,
 	"biografia": ###REPLACE###,
-	"ubicacion": ###REPLACE###,
-	"busquedaId": ###REPLACE###
+	"provincia": ###REPLACE###,
+	"fotoUrl": ###REPLACE###
 }
 
 ### Check the modified usuarios
@@ -135,20 +135,20 @@ Content-Type: application/json
 
 {
 	"nombre": ###REPLACE###,
+	"usuario": ###REPLACE###,
 	"fechaNacimiento": ###REPLACE###,
 	"estatura": ###REPLACE###,
 	"peso": ###REPLACE###,
+	"telefono": ###REPLACE###,
 	"email": ###REPLACE###,
-	"password": ###REPLACE###,
-	"fechaAlta": ###REPLACE###,
-	"fechaBaja": ###REPLACE###,
+	"contrasena": ###REPLACE###,
 	"aficion": ###REPLACE###,
 	"genero": ###REPLACE###,
 	"colorOjos": ###REPLACE###,
 	"colorPelo": ###REPLACE###,
 	"biografia": ###REPLACE###,
-	"ubicacion": ###REPLACE###,
-	"busquedaId": ###REPLACE###
+	"provincia": ###REPLACE###,
+	"fotoUrl": ###REPLACE###
 }
 
 ### Test 07: Delete an existing usuarios
@@ -162,20 +162,20 @@ Token: {{token}}
 
 {
 	"nombre": ###REPLACE###,
+	"usuario": ###REPLACE###,
 	"fechaNacimiento": ###REPLACE###,
 	"estatura": ###REPLACE###,
 	"peso": ###REPLACE###,
+	"telefono": ###REPLACE###,
 	"email": ###REPLACE###,
-	"password": ###REPLACE###,
-	"fechaAlta": ###REPLACE###,
-	"fechaBaja": ###REPLACE###,
+	"contrasena": ###REPLACE###,
 	"aficion": ###REPLACE###,
 	"genero": ###REPLACE###,
 	"colorOjos": ###REPLACE###,
 	"colorPelo": ###REPLACE###,
 	"biografia": ###REPLACE###,
-	"ubicacion": ###REPLACE###,
-	"busquedaId": ###REPLACE###
+	"provincia": ###REPLACE###,
+	"fotoUrl": ###REPLACE###
 }
 
 ### Check the created usuarios

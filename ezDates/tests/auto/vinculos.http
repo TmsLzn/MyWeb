@@ -20,7 +20,7 @@ Content-Type: application/json
 
 { 
 	"email": ###REPLACE###,
-	"password": ###REPLACE###
+	"contrasena": ###REPLACE###
 }
 
 ###
@@ -51,8 +51,8 @@ Content-Type: application/json
 Token: {{token}} 
 
 {
-	"userIdEnviado": ###REPLACE###,
-	"userIdRecibido": ###REPLACE###,
+	"usernameEnviado": ###REPLACE###,
+	"usernameRecibido": ###REPLACE###,
 	"estadoSolicitud": ###REPLACE###,
 	"fechaSolicitud": ###REPLACE###,
 	"revocacion": ###REPLACE###
@@ -70,8 +70,8 @@ POST {{BASE}}/vinculos
 Content-Type: application/json 
 
 { 
-	"userIdEnviado": ###REPLACE###,
-	"userIdRecibido": ###REPLACE###,
+	"usernameEnviado": ###REPLACE###,
+	"usernameRecibido": ###REPLACE###,
 	"estadoSolicitud": ###REPLACE###,
 	"fechaSolicitud": ###REPLACE###,
 	"revocacion": ###REPLACE###
@@ -85,8 +85,8 @@ Content-Type: application/json
 Token: {{token}} 
 
 { 
-	"userIdEnviado": ###REPLACE###,
-	"userIdRecibido": ###REPLACE###,
+	"usernameEnviado": ###REPLACE###,
+	"usernameRecibido": ###REPLACE###,
 	"estadoSolicitud": ###REPLACE###,
 	"fechaSolicitud": ###REPLACE###,
 	"revocacion": ###REPLACE###
@@ -104,8 +104,8 @@ PUT {{BASE}}/vinculos/{{vinId}}
 Content-Type: application/json
 
 {
-	"userIdEnviado": ###REPLACE###,
-	"userIdRecibido": ###REPLACE###,
+	"usernameEnviado": ###REPLACE###,
+	"usernameRecibido": ###REPLACE###,
 	"estadoSolicitud": ###REPLACE###,
 	"fechaSolicitud": ###REPLACE###,
 	"revocacion": ###REPLACE###
@@ -121,8 +121,8 @@ Content-Type: application/json
 Token: {{token}}
 
 {
-	"userIdEnviado": ###REPLACE###,
-	"userIdRecibido": ###REPLACE###,
+	"usernameEnviado": ###REPLACE###,
+	"usernameRecibido": ###REPLACE###,
 	"estadoSolicitud": ###REPLACE###,
 	"fechaSolicitud": ###REPLACE###,
 	"revocacion": ###REPLACE###

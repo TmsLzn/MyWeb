@@ -20,7 +20,7 @@ Content-Type: application/json
 
 { 
 	"email": ###REPLACE###,
-	"password": ###REPLACE###
+	"contrasena": ###REPLACE###
 }
 
 ###
@@ -38,7 +38,7 @@ Content-Type: application/json
 
 ### Test 02: Try get one existing fotos by its nonexistent id.
 ### negative test 
-GET {{BASE}}/fotos/1
+GET {{BASE}}/fotos/999999999
 Content-Type: application/json 
 
 
@@ -51,7 +51,7 @@ Content-Type: application/json
 Token: {{token}} 
 
 {
-	"userId": ###REPLACE###,
+	"usuario": ###REPLACE###,
 	"urlFoto": ###REPLACE###,
 	"nombreFoto": ###REPLACE###,
 	"descripcionFoto": ###REPLACE###
@@ -69,7 +69,7 @@ POST {{BASE}}/fotos
 Content-Type: application/json 
 
 { 
-	"userId": ###REPLACE###,
+	"usuario": ###REPLACE###,
 	"urlFoto": ###REPLACE###,
 	"nombreFoto": ###REPLACE###,
 	"descripcionFoto": ###REPLACE###
@@ -83,7 +83,7 @@ Content-Type: application/json
 Token: {{token}} 
 
 { 
-	"userId": ###REPLACE###,
+	"usuario": ###REPLACE###,
 	"urlFoto": ###REPLACE###,
 	"nombreFoto": ###REPLACE###,
 	"descripcionFoto": ###REPLACE###
@@ -101,7 +101,7 @@ PUT {{BASE}}/fotos/{{fotId}}
 Content-Type: application/json
 
 {
-	"userId": ###REPLACE###,
+	"usuario": ###REPLACE###,
 	"urlFoto": ###REPLACE###,
 	"nombreFoto": ###REPLACE###,
 	"descripcionFoto": ###REPLACE###
@@ -117,7 +117,7 @@ Content-Type: application/json
 Token: {{token}}
 
 {
-	"userId": ###REPLACE###,
+	"usuario": ###REPLACE###,
 	"urlFoto": ###REPLACE###,
 	"nombreFoto": ###REPLACE###,
 	"descripcionFoto": ###REPLACE###

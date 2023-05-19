@@ -20,7 +20,7 @@ Content-Type: application/json
 
 { 
 	"email": ###REPLACE###,
-	"password": ###REPLACE###
+	"contrasena": ###REPLACE###
 }
 
 ###
