@@ -23,14 +23,16 @@
         "description": "Creates a new entry in 'usuarios'",
         "route": "/usuarios",
         "method": "POST",
-        "sql": "INSERT INTO usuarios (nombre, fechaNacimiento, estatura, peso, email, password, fechaAlta, fechaBaja, aficion, genero, colorOjos, colorPelo, biografia, ubicacion, busquedaId) VALUES ($nombre, $fechaNacimiento, $estatura, $peso, $email, $password, $fechaAlta, $fechaBaja, $aficion, $genero, $colorOjos, $colorPelo, $biografia, $ubicacion, $busquedaId)",
+        "sql": "INSERT INTO usuarios (nombre, usuario, fechaNacimiento, estatura, peso, telefono, email, contrasena, fechaAlta, fechaBaja, aficion, genero, colorOjos, colorPelo, biografia, provincia, fotoUrl) VALUES ($nombre, $usuario, $fechaNacimiento, $estatura, $peso, $telefono, $email, $contrasena, $fechaAlta, $fechaBaja, $aficion, $genero, $colorOjos, $colorPelo, $biografia, $provincia, $fotoUrl)",
         "request_body_params": [
             "nombre",
+            "usuario",
             "fechaNacimiento",
             "estatura",
             "peso",
+            "telefono",
             "email",
-            "password",
+            "contrasena",
             "fechaAlta",
             "fechaBaja",
             "aficion",
@@ -38,10 +40,10 @@
             "colorOjos",
             "colorPelo",
             "biografia",
-            "ubicacion",
-            "busquedaId"
+            "provincia",
+            "fotoUrl"
         ],
-        "auth_required": false,
+        "auth_required": true,
         "allowed_roles": [
             "*"
         ]
@@ -50,14 +52,16 @@
         "description": "Updates an existing entry in 'usuarios' by its primary key",
         "route": "/usuarios/$userId",
         "method": "PUT",
-        "sql": "UPDATE usuarios SET nombre = $nombre, fechaNacimiento = $fechaNacimiento, estatura = $estatura, peso = $peso, email = $email, password = $password, fechaAlta = $fechaAlta, fechaBaja = $fechaBaja, aficion = $aficion, genero = $genero, colorOjos = $colorOjos, colorPelo = $colorPelo, biografia = $biografia, ubicacion = $ubicacion, busquedaId = $busquedaId WHERE userId = $userId",
+        "sql": "UPDATE usuarios SET nombre = $nombre, usuario = $usuario, fechaNacimiento = $fechaNacimiento, estatura = $estatura, peso = $peso, telefono = $telefono, email = $email, contrasena = $contrasena, fechaAlta = $fechaAlta, fechaBaja = $fechaBaja, aficion = $aficion, genero = $genero, colorOjos = $colorOjos, colorPelo = $colorPelo, biografia = $biografia, provincia = $provincia, fotoUrl = $fotoUrl WHERE userId = $userId",
         "request_body_params": [
             "nombre",
+            "usuario",
             "fechaNacimiento",
             "estatura",
             "peso",
+            "telefono",
             "email",
-            "password",
+            "contrasena",
             "fechaAlta",
             "fechaBaja",
             "aficion",
@@ -65,10 +69,10 @@
             "colorOjos",
             "colorPelo",
             "biografia",
-            "ubicacion",
-            "busquedaId"
+            "provincia",
+            "fotoUrl"
         ],
-        "auth_required": false,
+        "auth_required": true,
         "allowed_roles": [
             "*"
         ]
@@ -78,7 +82,7 @@
         "route": "/usuarios/$userId",
         "method": "DELETE",
         "sql": "DELETE FROM usuarios WHERE userId = $userId",
-        "auth_required": false,
+        "auth_required": true,
         "allowed_roles": [
             "*"
         ]

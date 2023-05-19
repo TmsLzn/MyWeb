@@ -23,9 +23,9 @@
         "description": "Creates a new entry in 'fotos'",
         "route": "/fotos",
         "method": "POST",
-        "sql": "INSERT INTO fotos (userId, urlFoto, nombreFoto, descripcionFoto) VALUES ($userId, $urlFoto, $nombreFoto, $descripcionFoto)",
+        "sql": "INSERT INTO fotos (usuario, urlFoto, nombreFoto, descripcionFoto) VALUES ($usuario, $urlFoto, $nombreFoto, $descripcionFoto)",
         "request_body_params": [
-            "userId",
+            "usuario",
             "urlFoto",
             "nombreFoto",
             "descripcionFoto"
@@ -39,9 +39,9 @@
         "description": "Updates an existing entry in 'fotos' by its primary key",
         "route": "/fotos/$fotoId",
         "method": "PUT",
-        "sql": "UPDATE fotos SET userId = $userId, urlFoto = $urlFoto, nombreFoto = $nombreFoto, descripcionFoto = $descripcionFoto WHERE fotoId = $fotoId",
+        "sql": "UPDATE fotos SET usuario = $usuario, urlFoto = $urlFoto, nombreFoto = $nombreFoto, descripcionFoto = $descripcionFoto WHERE fotoId = $fotoId",
         "request_body_params": [
-            "userId",
+            "usuario",
             "urlFoto",
             "nombreFoto",
             "descripcionFoto"

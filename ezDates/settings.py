@@ -12,7 +12,7 @@ DB_CONN = {
     "port": 3306,
     "username": "iissi_user",
     "password": "iissi$user",
-    "database": "prueba",
+    "database": "ezdates",
 }
 
 
@@ -21,9 +21,6 @@ DB_CONN = {
 SQL_SCRIPTS = [
     "ezDates.sql",
     "populate-ez.sql",
-    "procedure.sql",
-    "triggers2.sql",
-    "view.sql"
     # Reference your sql files here, e.g. "create_tables.sql"
 ]
 
@@ -39,7 +36,7 @@ API_PREFIX = "/api/v1"
 USER_AUTH_DATA = {
     "table": "Usuarios",
     "identifier": "email",  
-    "password": "password",
+    "password": "contrasena",
 }
 
 # A random string that is used for security purposes

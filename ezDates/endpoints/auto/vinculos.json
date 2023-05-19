@@ -23,15 +23,15 @@
         "description": "Creates a new entry in 'vinculos'",
         "route": "/vinculos",
         "method": "POST",
-        "sql": "INSERT INTO vinculos (userIdEnviado, userIdRecibido, estadoSolicitud, fechaSolicitud, revocacion) VALUES ($userIdEnviado, $userIdRecibido, $estadoSolicitud, $fechaSolicitud, $revocacion)",
+        "sql": "INSERT INTO vinculos (usernameEnviado, usernameRecibido, estadoSolicitud, fechaSolicitud, revocacion) VALUES ($usernameEnviado, $usernameRecibido, $estadoSolicitud, $fechaSolicitud, $revocacion)",
         "request_body_params": [
-            "userIdEnviado",
-            "userIdRecibido",
+            "usernameEnviado",
+            "usernameRecibido",
             "estadoSolicitud",
             "fechaSolicitud",
             "revocacion"
         ],
-        "auth_required": false,
+        "auth_required": true,
         "allowed_roles": [
             "*"
         ]
@@ -40,15 +40,15 @@
         "description": "Updates an existing entry in 'vinculos' by its primary key",
         "route": "/vinculos/$vinculoId",
         "method": "PUT",
-        "sql": "UPDATE vinculos SET userIdEnviado = $userIdEnviado, userIdRecibido = $userIdRecibido, estadoSolicitud = $estadoSolicitud, fechaSolicitud = $fechaSolicitud, revocacion = $revocacion WHERE vinculoId = $vinculoId",
+        "sql": "UPDATE vinculos SET usernameEnviado = $usernameEnviado, usernameRecibido = $usernameRecibido, estadoSolicitud = $estadoSolicitud, fechaSolicitud = $fechaSolicitud, revocacion = $revocacion WHERE vinculoId = $vinculoId",
         "request_body_params": [
-            "userIdEnviado",
-            "userIdRecibido",
+            "usernameEnviado",
+            "usernameRecibido",
             "estadoSolicitud",
             "fechaSolicitud",
             "revocacion"
         ],
-        "auth_required": false,
+        "auth_required": true,
         "allowed_roles": [
             "*"
         ]
@@ -58,7 +58,7 @@
         "route": "/vinculos/$vinculoId",
         "method": "DELETE",
         "sql": "DELETE FROM vinculos WHERE vinculoId = $vinculoId",
-        "auth_required": false,
+        "auth_required": true,
         "allowed_roles": [
             "*"
         ]
