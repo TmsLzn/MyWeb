@@ -13,9 +13,11 @@ DROP TABLE IF EXISTS Usuarios;
 CREATE TABLE Usuarios (
 	userId INT NOT NULL AUTO_INCREMENT,
 	nombre VARCHAR(30), 
+	usuario VARCHAR(30),
 	fechaNacimiento DATE ,
 	estatura FLOAT ,
 	peso FLOAT,
+	telefono INT,
 	email VARCHAR(70) UNIQUE,
 	password LONGTEXT,
 	fechaAlta DATE,
@@ -94,7 +96,7 @@ CREATE TABLE Ubicaciones (
 CREATE TABLE Fotos (
 	fotoId INT NOT NULL AUTO_INCREMENT,
 	userId INT,
-	urlFoto VARCHAR(80) UNIQUE,
+	urlFoto VARCHAR(200) UNIQUE,
 	nombreFoto VARCHAR(15),
 	descripcionFoto VARCHAR(120),
 	PRIMARY KEY (fotoId),
@@ -138,16 +140,14 @@ CREATE TABLE aficionBusqueda (
 	busquedaId INT,
 	PRIMARY KEY (aficionBusquedaId),
 	FOREIGN KEY (busquedaId) REFERENCES Busquedas (busquedaId) 
-)
-;
+);
 
 CREATE TABLE Aficiones (
 	userId INT NOT NULL,
 	aficion VARCHAR(50),
 	PRIMARY KEY (userId, aficion),
 	FOREIGN KEY (userId) REFERENCES usuarios(userId)
-)
-;
+);
 
 
 

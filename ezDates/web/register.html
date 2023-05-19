@@ -9,15 +9,13 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/registro.css">
     <script src="/js/utils/include.js"></script>
-    <script src="js/registro.js" type="module"></script>
+    <script src="js/register.js" type="module"></script>
 
     <title>Ez-Dates: Registro</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <script src="/web/css/footer.css"></script>
-    <script src="/js/libs/jquery-3.4.1.min.js"></script>
     <script src="/js/libs/bootstrap.min.js"></script>
     <script type="module" src="/js/register.js"></script>
     <script src="js/libs/axios.min.js"></script>
@@ -47,17 +45,9 @@
                     <div class="row">
                         <div class="col-md">
                             <div class="form-group">
-                                <label for="firstname-input">First name:</label>
-                                <input type="text" class="form-control text-light bg-dark" id="firstname-input"
-                                    name="firstName" placeholder="First name">
-                            </div>
-                        </div>
-
-                        <div class="col-md">
-                            <div class="form-group">
-                                <label for="lastname-input">Last name:</label>
-                                <input type="text" class="form-control text-light bg-dark" id="lastname-input"
-                                    name="lastName" placeholder="Last name">
+                                <label for="firstname-input">Nombre completo:</label>
+                                <input type="text" class="form-control text-light bg-dark" id="nombre"
+                                    name="nombre" placeholder="First name">
                             </div>
                         </div>
                     </div>
@@ -66,7 +56,7 @@
                         <div class="col-md">
                             <div class="form-group">
                                 <label for="email-input">Email:</label>
-                                <input type="text" class="form-control text-light bg-dark" id="email-input" name="email"
+                                <input type="text" class="form-control text-light bg-dark" id="email" name="email"
                                     placeholder="Email">
                             </div>
                         </div>
@@ -74,7 +64,7 @@
                         <div class="col-md">
                             <div class="form-group">
                                 <label for="phone-input">Phone:</label>
-                                <input type="tel" class="form-control text-light bg-dark" id="phone-input" name="phone"
+                                <input type="tel" class="form-control text-light bg-dark" id="telefono" name="telefono"
                                     placeholder="Phone">
                             </div>
                         </div>
@@ -83,8 +73,8 @@
                     <div class="row">
                         <div class="col-md">
                             <div class="form-group">
-                                <label for="gender-select">Gender:</label>
-                                <select class="form-control text-light bg-dark" id="gender-select" name="gender">
+                                <label for="gender-select">Género:</label>
+                                <select class="form-control text-light bg-dark" id="genero" name="genero">
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                     <option value="other">Other</option>
@@ -94,9 +84,9 @@
 
                         <div class="col-md">
                             <div class="form-group">
-                                <label for="birthdate-input">Date of Birth:</label>
-                                <input type="date" class="form-control text-light bg-dark" id="birthdate-input"
-                                    name="birthdate">
+                                <label for="birthdate-input">Fecha de nacimiento:</label>
+                                <input type="date" class="form-control text-light bg-dark" id="fechaNacimiento"
+                                    name="fechaNacimiento">
                             </div>
                         </div>
 
@@ -268,6 +258,12 @@
                                 </datalist>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md text-center">
+                            <input type="text" id="biografia-input">Biografia</input>
+                        </div>
+
                     </div>
 
 

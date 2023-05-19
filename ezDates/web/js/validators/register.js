@@ -2,22 +2,16 @@
 const userValidator = {
     validateRegister: function (formData) {
         let errors = [];
-        let firstName = formData.get("firstName");
-        let lastName = formData.get("lastName");
+        let nombre = formData.get("nombre");
         let password = formData.get("password");
         let password2 = formData.get("password2");
         let email = formData.get("email");
         let phone = formData.get("phone");
         let fechaNacimiento = formData.get("birthdate");
 
-        if (firstName.length < 3) {
+        if (nombre.length < 3) {
             errors.push("El nombre debe ser de 3 o más caracteres");
         }
-
-        if (lastName.length < 3) {
-            errors.push("Tu apellido debe ser de 3 o más caracteres");
-        }
-
         if (password !== password2) {
             errors.push("Las contraseñas no coinciden");
         }

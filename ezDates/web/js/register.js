@@ -2,6 +2,8 @@ import { messageRenderer } from "/js/renderers/messages.js";
 import { userValidator } from "/js/validators/register.js";
 import { sessionManager } from "/js/utils/session.js";
 import { authAPI_auto } from "/js/api/_auth.js";
+
+
 function main() {
     let registerForm = document.getElementById("register-form");
     registerForm.onsubmit = handleSubmitRegister;
@@ -13,8 +15,6 @@ function valoresPorDefecto() {
     estatura.value = 170;
     let peso = document.getElementById('peso-input');
     peso.value = 75;
-    let telefono = document.getElementById('phone-input');
-    telefono.value = 75;
     let genero = document.getElementById('gender-select');
     genero.value = 'other';
     let colorOjos = document.getElementById('color-ojos-input');
@@ -52,12 +52,11 @@ async function sendRegister(formData) {
         sessionManager.login(sessionToken, loggedUser);
         window.location.href = "index.html";
     } catch (err) {
+        
         messageRenderer.showErrorAsAlert("Error registering a new user", err);
+        messageRenderer.showErrorAsAlert("Error registering a new user" + err.response );
     }
 }
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", main);

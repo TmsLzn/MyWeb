@@ -15,7 +15,7 @@ CREATE OR REPLACE PROCEDURE
 
 BEGIN
 
-     SET user = (SELECT userId FROM Usuarios WHERE userId = user);
+    SET user = (SELECT userId FROM Usuarios WHERE userId = user);
     UPDATE Usuarios SET nombre=nombreNew WHERE userId = user;
     UPDATE Usuarios SET fechaNacimiento= fechaNacimientoNew WHERE userId = user;
 

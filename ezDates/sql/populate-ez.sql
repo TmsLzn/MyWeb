@@ -15,12 +15,12 @@ TRUNCATE Aficiones;
 SET FOREIGN_KEY_CHECKS=1;
 
 
-INSERT INTO Usuarios(userId ,nombre ,fechaNacimiento ,estatura,peso, email ,password ,fechaAlta ,fechaBaja , aficion, genero ,colorOjos ,colorPelo ,biografia,ubicacion,busquedaId) VALUES
-   (1, 'Borja','2000-01-01', 170,20,'borjaalba@gmail.com','1234','2000-05-06',NULL,'Deportes','Masculino','Verdes','Castaño','biografia','41012',1),
-   (2, 'Javier','2002-09-30', 171,67,'javipas@gmail.com','1234','2019-02-07',NULL,'Videojuegos','Masculino','Azules','Castaño','Sobreviviendo en la US','41013',2),
-   (3, 'Antonio','2000-01-01', 155,540,'pedro@gmail.com','1234','2000-01-02',NULL,'Naturaleza','Masculino','Verdes','Castaño','biografia','41100',3),
-   (4, 'Marina','2003-04-02', 165,80,'marinauwu@gmail.com','1234','2020-03-04',NULL,'Fotografía','Femenino','Castaños','Rubio','Necesito tiempo para salir','21010',4),
-   (5, 'Sara','2001-11-03', 171,75,'saragmz@gmail.com','1234','2021-05-05',NULL,'Animales','Femenino','Azules','Rubio','Buscando amigos','21005',5);
+INSERT INTO Usuarios(userId ,nombre , usuario, fechaNacimiento ,estatura,peso, telefono, email ,password ,fechaAlta ,fechaBaja , aficion, genero ,colorOjos ,colorPelo ,biografia,ubicacion,busquedaId) VALUES
+   (1, 'Borja', 'borjitaaa', '2000-01-01', 170,20, 600123456, 'borjaalba@gmail.com','1234','2000-05-06',NULL,'Deportes','Masculino','Verdes','Castaño','biografia','41012',1),
+   (2, 'Javier', 'javichulo','2002-09-30', 171,67, 1234567890, 'javipas@gmail.com','1234','2019-02-07',NULL,'Videojuegos','Masculino','Azules','Castaño','Sobreviviendo en la US','41013',2),
+   (3, 'Antonio','ayyyantonio','2000-01-01', 155,540, 00112233445,'pedro@gmail.com','1234','2000-01-02',NULL,'Naturaleza','Masculino','Verdes','Castaño','biografia','41100',3),
+   (4, 'Marina', 'LAMARI', '2003-04-02', 165,80,1234567890, 'marinauwu@gmail.com','1234','2020-03-04',NULL,'Fotografía','Femenino','Castaños','Rubio','Necesito tiempo para salir','21010',4),
+   (5, 'Sara','sarandonga','2001-11-03', 171,75, 1234567890, 'saragmz@gmail.com','1234','2021-05-05',NULL,'Animales','Femenino','Azules','Rubio','Buscando amigos','21005',5);
    
    
 INSERT INTO Vinculos(vinculoId, userIdEnviado, userIdRecibido, estadoSolicitud, fechaSolicitud, revocacion) VALUES

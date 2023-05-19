@@ -12,7 +12,7 @@ DB_CONN = {
     "port": 3306,
     "username": "iissi_user",
     "password": "iissi$user",
-    "database": "ezdates",
+    "database": "prueba",
 }
 
 
@@ -23,6 +23,7 @@ SQL_SCRIPTS = [
     "populate-ez.sql",
     "procedure.sql",
     "triggers2.sql",
+    "view.sql"
     # Reference your sql files here, e.g. "create_tables.sql"
 ]
 
