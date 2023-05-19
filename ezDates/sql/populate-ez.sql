@@ -7,7 +7,7 @@ TRUNCATE TABLE Citas;
 
 SET FOREIGN_KEY_CHECKS=1;
 
-INSERT INTO Usuarios(userId, nombre, usuario, fechaNacimiento, estatura, peso, telefono, email, contrasena, aficion, genero, colorOjos, colorPelo, biografia, provincia, fotoUrl) VALUES
+INSERT INTO Usuarios(userId, nombre, usuario, fechaNacimiento, estatura, peso, telefono, email, password, aficion, genero, colorOjos, colorPelo, biografia, provincia, fotoUrl) VALUES
    (1, 'Borja', 'borjitaaa', '2000-01-01', 170, 20, 600123456, 'borjaalba@gmail.com', '1234', 'Deportes', 'Masculino', 'Verdes', 'Castaño', 'biografia', 'Sevilla', 'https://i.imgur.com/qN5vYRk.jpeg'),
    (2, 'Javier', 'javichulo', '2002-09-30', 171, 67, 1234567890, 'javipas@gmail.com', '1234', 'Videojuegos', 'Masculino', 'Azules', 'Castaño', 'Sobreviviendo en la US', 'Sevilla', 'https://i.imgur.com/qN5vYRk.jpeg'),
    (3, 'Antonio', 'ayyyantonio', '2000-01-01', 155, 540, 112233445, 'pedro@gmail.com', '1234', 'Naturaleza', 'Masculino', 'Verdes', 'Castaño', 'biografia', 'Sevilla', 'https://i.imgur.com/qN5vYRk.jpeg'),

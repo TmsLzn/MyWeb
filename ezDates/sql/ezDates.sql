@@ -12,7 +12,7 @@ CREATE TABLE Usuarios (
     peso FLOAT,
     telefono INT,
     email VARCHAR(70) UNIQUE,
-    contrasena VARCHAR(50),
+    password VARCHAR(50),
     aficion VARCHAR(50),
     genero ENUM('Masculino', 'Femenino', 'Otros'),
     colorOjos ENUM('Negros', 'Castaños', 'Azules', 'Verdes', 'Grises'),
