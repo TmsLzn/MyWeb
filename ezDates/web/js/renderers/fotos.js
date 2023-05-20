@@ -6,7 +6,7 @@ const photoRenderer = {
 		let html = `<div class="col-md-4 mb-2">
 			<div class="card bg-dark text-light">
 				<div class="embed-responsive embed-responsive-4by3">
-					<a href="profile_detail.html?username=${photo.usuario}">
+					<a href="photo_details.html?fotoId=${photo.fotoId}">
 						<img src="${photo.urlFoto}" class="img-fluid card-image embed-responsive-item fixed-size-image">
 					</a>
 				</div>	
