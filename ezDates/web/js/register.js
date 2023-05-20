@@ -11,17 +11,17 @@ function main() {
 }
 
 function valoresPorDefecto() {
-    let estatura = document.getElementById('estatura-input');
+    let estatura = document.getElementById('estatura');
     estatura.value = 170;
-    let peso = document.getElementById('peso-input');
+    let peso = document.getElementById('peso');
     peso.value = 75;
-    let genero = document.getElementById('gender-select');
+    let genero = document.getElementById('genero');
     genero.value = 'other';
-    let colorOjos = document.getElementById('color-ojos-input');
+    let colorOjos = document.getElementById('color-ojos');
     colorOjos.value = 'other';
-    let colorPelo = document.getElementById('color-pelo-input');
+    let colorPelo = document.getElementById('color-pelo');
     colorPelo.value = 'other';
-    let bio = document.getElementById('biografia-input');
+    let bio = document.getElementById('biografia');
     bio.value = 'Hola soy un/a nuev@ usuari@.';
 }
 
@@ -55,6 +55,13 @@ async function sendRegister(formData) {
         
         messageRenderer.showErrorAsAlert("Error registering a new user", err);
         messageRenderer.showErrorAsAlert("Error registering a new user" + err.response );
+    }
+}
+
+async function createUser(formData){
+    try{
+        let datosUser = await usuariosAPI_auto.create(formData);
+        
     }
 }
 
