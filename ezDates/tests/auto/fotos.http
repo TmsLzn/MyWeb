@@ -1,4 +1,3 @@
-
 ### This is an auto-generated test suite, it needs to be completed with valid data.
 ### These are not all tests you need, more of them should be created to evaluate the functional
 ### requirements of your project. These tests only test the CRUD endpoints of the entity.
@@ -9,7 +8,7 @@
 ### Positive test
 ### Test 00: Get all existing fotos
 ### This query is used in several of the below tests it should be executed first.
-# @name fotos
+@name fotos
 GET {{BASE}}/fotos
 
 ### Login a(n) usuarios and save the generated token 

@@ -1,3 +1,4 @@
+"use strict"
 import { messageRenderer } from "/js/renderers/messages.js";
 import { userValidator } from "/js/validators/register.js";
 import { sessionManager } from "/js/utils/session.js";
