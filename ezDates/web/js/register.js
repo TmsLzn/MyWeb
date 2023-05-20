@@ -58,12 +58,6 @@ async function sendRegister(formData) {
     }
 }
 
-async function createUser(formData){
-    try{
-        let datosUser = await usuariosAPI_auto.create(formData);
-        
-    }
-}
 
 
 document.addEventListener("DOMContentLoaded", main);
