@@ -35,8 +35,8 @@ API_PREFIX = "/api/v1"
 
 USER_AUTH_DATA = {
     "table": "Usuarios",
-    "identifier": "email",  
-    "password": "contrasena",
+    "identifier": "usuario",  
+    "password": "password",
 }
 
 # A random string that is used for security purposes

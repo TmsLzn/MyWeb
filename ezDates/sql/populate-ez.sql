@@ -5,6 +5,7 @@ TRUNCATE TABLE Vinculos;
 TRUNCATE TABLE Fotos;
 TRUNCATE TABLE Citas;
 
+
 SET FOREIGN_KEY_CHECKS=1;
 
 INSERT INTO Usuarios(userId, nombre, usuario, fechaNacimiento, estatura, peso, telefono, email, password, aficion, genero, colorOjos, colorPelo, biografia, provincia, fotoUrl) VALUES

@@ -12,30 +12,18 @@ body {
     
 }
 .container-content{
-    margin: 0 100px;
+    margin: 0 50px;
     margin-bottom: 50px;
 }
 
-.titulo {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 36px;
-    font-weight: bold;
-    color: #333;
-    text-transform: uppercase;
-}
-
-.fixed-size-image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-  }
-  
-    
 
 .container-footer{
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.card{
+    width: 400px;
 }
 
