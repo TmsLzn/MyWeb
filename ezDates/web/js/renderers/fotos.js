@@ -25,8 +25,8 @@ const photoRenderer = {
 	asDetails: function (photo) {
 		let html = `<div><img src="${photo.urlFoto}" class="img-fluid rounded">
 					<h3>${photo.nombreFoto}</h3>
-					<h6>${photo.description}</h6>
-					<p> Uploaded by (User <a href="profile.html" class="user-link">@${photo.userId})</p>
+					<h6>${photo.descripcionFoto}</h6>
+					<h4> <a href="profile.html"> @${photo.usuario})</h4>
 					</div>`;
 		let photoDetails = parseHTML (html);
 		return photoDetails;

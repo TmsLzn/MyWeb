@@ -11,12 +11,13 @@ body {
 
 .container-content{
     margin: 0 100px;
+    margin-left: 100px;
     margin-bottom: 50px;
 }
 
 
 .container-imagen{
-    
+    margin: 0 100px;
     background-color: #ffffff;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 25px;

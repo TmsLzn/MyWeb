@@ -23,7 +23,6 @@ async function main() {
     let editBtn = document.querySelector("#button-edit");
     editBtn.onclick = handleEdit;
 
-
     loadPhotoDetails();
     hideActionsColumn();
 }
@@ -31,9 +30,11 @@ async function main() {
 function hideActionsColumn() {
     let actions_col = document.getElementById("actions-col");
     if (!sessionManager.isLogged()) {
-        actions_col.style.display = "none";
+      actions_col.innerHTML = "<h2>Logueate para más configuraciones</h2>";
     }
-}
+  }
+  
+
 
 
 function handleEdit(event) {
