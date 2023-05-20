@@ -19,8 +19,8 @@ POST {{BASE}}/login
 Content-Type: application/json 
 
 { 
-	"email": ###REPLACE###,
-	"contrasena": ###REPLACE###
+	"usuario": ###REPLACE###,
+	"password": ###REPLACE###
 }
 
 ###
@@ -58,7 +58,7 @@ Token: {{token}}
 	"peso": ###REPLACE###,
 	"telefono": ###REPLACE###,
 	"email": ###REPLACE###,
-	"contrasena": ###REPLACE###,
+	"password": ###REPLACE###,
 	"aficion": ###REPLACE###,
 	"genero": ###REPLACE###,
 	"colorOjos": ###REPLACE###,
@@ -87,7 +87,7 @@ Content-Type: application/json
 	"peso": ###REPLACE###,
 	"telefono": ###REPLACE###,
 	"email": ###REPLACE###,
-	"contrasena": ###REPLACE###,
+	"password": ###REPLACE###,
 	"aficion": ###REPLACE###,
 	"genero": ###REPLACE###,
 	"colorOjos": ###REPLACE###,
@@ -112,7 +112,7 @@ Token: {{token}}
 	"peso": ###REPLACE###,
 	"telefono": ###REPLACE###,
 	"email": ###REPLACE###,
-	"contrasena": ###REPLACE###,
+	"password": ###REPLACE###,
 	"aficion": ###REPLACE###,
 	"genero": ###REPLACE###,
 	"colorOjos": ###REPLACE###,
@@ -141,7 +141,7 @@ Content-Type: application/json
 	"peso": ###REPLACE###,
 	"telefono": ###REPLACE###,
 	"email": ###REPLACE###,
-	"contrasena": ###REPLACE###,
+	"password": ###REPLACE###,
 	"aficion": ###REPLACE###,
 	"genero": ###REPLACE###,
 	"colorOjos": ###REPLACE###,
@@ -168,7 +168,7 @@ Token: {{token}}
 	"peso": ###REPLACE###,
 	"telefono": ###REPLACE###,
 	"email": ###REPLACE###,
-	"contrasena": ###REPLACE###,
+	"password": ###REPLACE###,
 	"aficion": ###REPLACE###,
 	"genero": ###REPLACE###,
 	"colorOjos": ###REPLACE###,

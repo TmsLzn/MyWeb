@@ -6,8 +6,8 @@ const userValidator = {
         let password = formData.get("password");
         let password2 = formData.get("password2");
         let email = formData.get("email");
-        let phone = formData.get("phone");
-        let fechaNacimiento = formData.get("birthdate");
+        let phone = formData.get("telefono");
+        let fechaNacimiento = formData.get("fechaNacimiento");
 
         if (nombre.length < 3) {
             errors.push("El nombre debe ser de 3 o más caracteres");
@@ -40,7 +40,7 @@ function validateEmail(email) {
 
 // Función para validar el número de teléfono
 function validatePhoneNumber(phone) {
-    const phonePattern = /^\d{9}$/; // Asumiendo que el número de teléfono tiene 9 dígitos
+    const phonePattern = /^\d{9}$/;
     return phonePattern.test(phone);
 }
 
